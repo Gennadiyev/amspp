@@ -1,0 +1,53 @@
+[project]
+name = "amspp"
+version = "0.0.1"
+authors = [
+  { name="Kunologist", email="jiyikun2002@gmail.com" },
+]
+description = "A multi-modal spiking neural network dataset and dataset loader for PyTorch SNN-like models."
+readme = "readme.md"
+license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Gennadiyev/amspp"
+"Bug Tracker" = "https://github.com/Gennadiyev/amspp/issues"
+
+[tool.poetry]
+name = "amspp"
+version = "0.0.1"
+description = "A multi-modal spiking neural network dataset and dataset loader for PyTorch SNN-like models.
+authors = ["Kunologist <jiyikun2002@gmail.com>"]
+maintainers = ["Kunologist <jiyikun2002@gmail.com>", "Chenyu Yang <yangchenyu0101@gmail.com>", "Yifan Zhang <skylarkie2576@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/Gennadiyev/amspp"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers',
+]
+packages = [ { include = "amspp", from = "." } ]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Gennadiyev/amspp/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+torch = "^1.7.1"
+snntorch = "^0.5.2"
+numpy = "^1.19.2"
+loguru = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
